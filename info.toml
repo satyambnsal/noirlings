@@ -1,0 +1,9 @@
+# INTRO
+
+[[exercises]]
+name = "intro1"
+path = "exercises/intro/src/main.nr"
+mode = "compile"
+hint = """
+No hints this time ;)
+"""

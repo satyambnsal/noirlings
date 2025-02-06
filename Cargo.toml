@@ -1,0 +1,47 @@
+# Cargo.toml
+[package]
+name = "noirlings"
+version = "0.1.0"
+edition = "2021"
+authors = ["Satyam Bansal<satyambnsal@gmail.com>"]
+
+[dependencies]
+argh = "0.1"
+indicatif = "0.16"
+console = "0.15"
+notify = "4.0"
+toml = "0.5"
+regex = "1.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.81"
+home = "0.5.3"
+glob = "0.3.0"
+anyhow = "1.0.66"
+colored = "2"
+
+[[bin]]
+name = "noirlings"
+path = "src/main.rs"
+
+# Project structure:
+#
+# noirlings/
+# ├── Cargo.toml
+# ├── src/
+# │   ├── main.rs
+# │   ├── exercise.rs
+# │   ├── nargo_utils.rs
+# │   ├── run.rs
+# │   ├── ui.rs
+# │   ├── utils.rs
+# │   └── verify.rs
+# ├── exercises/
+# │   ├── variables/
+# │   │   ├── vars1.nr
+# │   │   └── vars2.nr
+# │   ├── functions/
+# │   │   ├── fn1.nr
+# │   │   └── fn2.nr
+# │   └── ...
+# ├── info.toml
+# └── README.md
