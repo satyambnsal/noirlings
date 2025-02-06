@@ -7,3 +7,13 @@ mode = "compile"
 hint = """
 No hints this time ;)
 """
+
+# MERKLE TREE
+
+[[exercises]]
+name = "merkle-tree"
+path = "exercises/merkle-tree/src/main.nr"
+mode = "test"
+hint = """
+No hints this time ;)
+"""
