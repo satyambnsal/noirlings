@@ -113,11 +113,14 @@ Run all tests:
 cargo test
 ```
 
+## Noir Resources
+
+- [Official Noir Documentation](https://noir-lang.org/docs)
+- [Noir GitHub Repository](https://github.com/noir-lang/noir)
+- [Awesome Noir](https://github.com/noir-lang/awesome-noir)
+- [Noir Examples](https://github.com/noir-lang/noir/tree/master/examples)
+
 ## Credits
 
 - Inspired by [Rustlings](https://github.com/rust-lang/rustlings)
 - Based on [Starklings](https://github.com/shramee/starklings-cairo1)
-
-## License
-
-[Insert license information]
