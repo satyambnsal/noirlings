@@ -113,6 +113,10 @@ Run all tests:
 cargo test
 ```
 
+## Questions?
+
+If you need any help while doing the exercises, feel free to ask in the [_Q&A_ category of the discussions](https://github.com/satyambnsal/noirlings/discussions/) if your question wasn't asked yet 💡
+
 ## Noir Resources
 
 - [Official Noir Documentation](https://noir-lang.org/docs)
@@ -122,5 +126,4 @@ cargo test
 
 ## Credits
 
-- Inspired by [Rustlings](https://github.com/rust-lang/rustlings)
-- Based on [Starklings](https://github.com/shramee/starklings-cairo1)
+- Inspired by [Rustlings](https://github.com/rust-lang/rustlings) and [Starklings](https://github.com/shramee/starklings-cairo1)
