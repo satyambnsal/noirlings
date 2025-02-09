@@ -3,8 +3,8 @@ use console::Emoji;
 use notify::{DebouncedEvent, RecommendedWatcher, RecursiveMode, Watcher};
 use std::ffi::OsStr;
 use std::fs;
-use std::io::{self, prelude::*};
-use std::path::{Path, PathBuf};
+use std::io::{self};
+use std::path::Path;
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::mpsc::{channel, RecvTimeoutError};
 use std::sync::{Arc, Mutex};
@@ -58,7 +58,6 @@ struct VerifyArgs {}
 /// Reruns `verify` when files were edited
 struct WatchArgs {
     #[argh(positional)]
-    // Start from this exercise
     start: Option<String>,
 }
 

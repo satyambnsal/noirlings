@@ -12,11 +12,8 @@ const CONTEXT: usize = 2;
 #[derive(Deserialize, Copy, Clone, Debug)]
 #[serde(rename_all = "lowercase")]
 pub enum Mode {
-    // Indicates that the exercise should be compiled
     Compile,
-    // Indicates that the exercise should be executed
     Execute,
-    // Indicates that the exercise should be tested
     Test,
 }
 
