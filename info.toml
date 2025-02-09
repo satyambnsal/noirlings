@@ -95,3 +95,14 @@ mode = "test"
 hint = """
 No hint this time
 """
+
+
+# Arrays
+
+[[exercises]]
+name = "array_basics"
+path = "exercises/arrays/array_basics.nr"
+mode = "test"
+hint = """
+No hint this time
+"""
