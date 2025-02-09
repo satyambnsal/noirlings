@@ -5,5 +5,5 @@
 
 fn main() {
     let x: Field;
-    println!("x is {}", x);
+    println(f"x is {f}");
 }
