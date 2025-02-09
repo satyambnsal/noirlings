@@ -2,7 +2,7 @@
 
 [[exercises]]
 name = "intro1"
-path = "exercises/intro/src/main.nr"
+path = "exercises/intro/intro1.nr"
 mode = "test"
 hint = """
 No hints this time ;)
@@ -23,6 +23,46 @@ No hints this time ;)
 [[exercises]]
 name = "variables1"
 path = "exercises/variables/variables1.nr"
+mode = "compile"
+hint = """
+No hint this time
+"""
+
+[[exercises]]
+name = "variables2"
+path = "exercises/variables/variables2.nr"
+mode = "compile"
+hint = """
+No hint this time
+"""
+
+[[exercises]]
+name = "variables3"
+path = "exercises/variables/variables3.nr"
+mode = "compile"
+hint = """
+No hint this time
+"""
+
+[[exercises]]
+name = "variables4"
+path = "exercises/variables/variables4.nr"
+mode = "compile"
+hint = """
+No hint this time
+"""
+
+[[exercises]]
+name = "variables5"
+path = "exercises/variables/variables5.nr"
+mode = "compile"
+hint = """
+No hint this time
+"""
+
+[[exercises]]
+name = "variables6"
+path = "exercises/variables/variables6.nr"
 mode = "compile"
 hint = """
 No hint this time
