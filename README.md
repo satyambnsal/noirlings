@@ -31,10 +31,13 @@ cd noirlings
 ```
 
 Make sure you have both Rust and Noir installed. If you don't have it installed:
-Run `./install.sh` in `noirlings` folder.
+Run
+ ```
+ ./install.sh
+ ``` 
 
 **If you see any error in terminal, install them separately with following commands**
-2. Install Rust and Cargo:
+1. Install Rust and Cargo:
 
 ```sh
 curl https://sh.rustup.rs -sSf | sh -s
@@ -51,7 +54,7 @@ noirup
 cargo install --path .
 ```
 
-Now you should have noirlings available as command. You can verify the installation with
+5. Now you should have noirlings available as command. You can verify the installation with
 ```
 noirlings --version
 ```
@@ -72,7 +75,7 @@ Noirlings is designed to help you learn Noir through hands-on exercises:
 1. Each exercise is a Noir file containing a problem to solve
 2. Run `noirlings watch` to start - you'll see an error message for the first exercise
 3. Open the exercise file in your editor and start solving
-4. Type `hint` in watch mode for help, or run `cargo run -r --bin noirlings hint exercise_name`
+4. Type `hint` in watch mode for help, or run `noirlings hint exercise_name`
 5. Remove the `// I AM NOT DONE` comment when you've solved an exercise
 6. Watch mode automatically verifies your solution and moves to the next exercise
 
