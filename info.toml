@@ -17,3 +17,13 @@ mode = "test"
 hint = """
 No hints this time ;)
 """
+
+# VARIABLES
+
+[[exercises]]
+name = "variables1"
+path = "exercises/variables/variables1.nr"
+mode = "compile"
+hint = """
+No hint this time
+"""

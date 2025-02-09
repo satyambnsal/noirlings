@@ -1,0 +1,7 @@
+[package]
+name = "exercise_crate"
+version = "0.1.0"
+authors = ["Satyam Bansal"]
+type = "bin"
+
+[dependencies]
