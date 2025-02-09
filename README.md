@@ -25,6 +25,10 @@ A hands-on, interactive way to learn Noir programming language through practical
 
 Make sure you have both Rust and Noir installed:
 
+You can install Rust and Nargo by running `./install.sh` 
+
+**Or install them separately**
+
 1. Install Rust and Cargo:
 
 ```sh
