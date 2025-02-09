@@ -12,7 +12,7 @@ No hints this time ;)
 
 [[exercises]]
 name = "merkle-tree"
-path = "exercises/merkle-tree/src/main.nr"
+path = "exercises/merkle-tree/merkle.nr"
 mode = "test"
 hint = """
 No hints this time ;)
