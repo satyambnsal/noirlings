@@ -21,45 +21,49 @@ A hands-on, interactive way to learn Noir programming language through practical
   <tr>
 <table>
 
-## Setup and run
+## Setup and Run
 
-Make sure you have both Rust and Noir installed:
-
-You can install Rust and Nargo by running `./install.sh` 
-
-**Or install them separately**
-
-1. Install Rust and Cargo:
-
-```sh
-curl https://sh.rustup.rs -sSf | sh -s
-```
-
-2. Install Noir:
-
-```sh
-curl -L https://raw.githubusercontent.com/noir-lang/noirup/refs/heads/main/install | bash
-noirup
-```
-
-3. Clone and enter the repository:
+1. Clone and enter the repository:
 
 ```sh
 git clone https://github.com/satyambnsal/noirlings.git
 cd noirlings
 ```
 
-4. Run noirlings (first run may take some time):
+Make sure you have both Rust and Noir installed. If you don't have it installed:
+Run `./install.sh` in `noirlings` folder.
+
+**If you see any error in terminal, install them separately with following commands**
+2. Install Rust and Cargo:
 
 ```sh
-cargo run -r --bin noirlings
+curl https://sh.rustup.rs -sSf | sh -s
 ```
-
-5. Start watch mode to begin the exercises:
+3. Install Noir:
 
 ```sh
-cargo run -r --bin noirlings watch
+curl -L https://raw.githubusercontent.com/noir-lang/noirup/refs/heads/main/install | bash
+noirup
 ```
+
+4. After Installing **Rust** and **Nargo**, you are ready to run your exercises. Lets first install the project binary with
+```
+cargo install --path .
+```
+
+Now you should have noirlings available as command. You can verify the installation with
+```
+noirlings --version
+```
+
+
+## Start Exercises 💻
+
+```sh
+noirlings watch 
+```
+
+
 
 ## How Noirlings Works
 
@@ -97,7 +101,7 @@ hint = "Your helpful hint here"
 3. Test your exercise:
 
 ```sh
-cargo run -r --bin noirlings run exercise_name
+noirlings run exercise_name
 ```
 
 4. Run test suite

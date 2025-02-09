@@ -126,10 +126,8 @@ fn main() {
         println!("For instructions, check the README.");
         std::process::exit(1);
     }
-    println!("before reading info.toml");
     let toml_str = &fs::read_to_string("info.toml").unwrap();
     let exercises = toml::from_str::<ExerciseList>(toml_str).unwrap().exercises;
-    println!("exercises found");
 
     let command = args.nested.unwrap_or_else(|| {
         println!("{DEFAULT_OUT}\n");

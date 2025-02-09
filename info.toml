@@ -10,13 +10,13 @@ No hints this time ;)
 
 # MERKLE TREE
 
-[[exercises]]
-name = "merkle-tree"
-path = "exercises/merkle-tree/merkle.nr"
-mode = "test"
-hint = """
-No hints this time ;)
-"""
+# [[exercises]]
+# name = "merkle-tree"
+# path = "exercises/merkle-tree/merkle.nr"
+# mode = "test"
+# hint = """
+# No hints this time ;)
+# """
 
 # VARIABLES
 
@@ -64,6 +64,17 @@ No hint this time
 name = "variables6"
 path = "exercises/variables/variables6.nr"
 mode = "compile"
+hint = """
+No hint this time
+"""
+
+
+# CONTROL FLOW
+
+[[exercises]]
+name = "if1"
+path = "exercises/control-flow/if1.nr"
+mode = "test"
 hint = """
 No hint this time
 """

@@ -1,10 +1,16 @@
-// variables1.nr
-// Make me compile
-// Execute `noirlings hint variables1` or use the `hint` watch subcommand for a hint
+fn can_vote() -> bool{
+  let age = 15;
+  let mut can_vote: bool = false;
 
-// I AM NOT DONE
+  if age >= 18 {
+    can_vote = true;
+  } else {
+    can_vote = false;
+  }
+  can_vote
+}
 
-fn main() {
-    let x = 5 ;
-    println(f" x is {x}");
+#[test]
+fn test_should_vote() {
+  assert(can_vote());
 }
