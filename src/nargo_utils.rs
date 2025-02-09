@@ -67,6 +67,7 @@ pub fn nargo_test(file_path: &PathBuf) -> anyhow::Result<String> {
     let crate_path = prepare_crate_for_exercise(file_path);
     let output = Command::new("nargo")
         .arg("test")
+        .arg("--show-output")
         .current_dir(crate_path)
         .output()
         .context("Failed to run nargo test")?;

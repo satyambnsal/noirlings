@@ -78,3 +78,20 @@ mode = "test"
 hint = """
 No hint this time
 """
+
+[[exercises]]
+name = "grade_calculator"
+path = "exercises/control-flow/grade_calculator.nr"
+mode = "test"
+hint = """
+No hint this time
+"""
+
+
+[[exercises]]
+name = "count_factors"
+path = "exercises/control-flow/count_factors.nr"
+mode = "test"
+hint = """
+No hint this time
+"""
