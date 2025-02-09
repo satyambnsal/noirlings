@@ -3,8 +3,8 @@
 
 // I AM NOT DONE
 
-const NUMBER = 3;
-const SMALL_NUMBER = 3_u8;
+global NUMBER = 7;
+global SMALL_NUMBER: u8 = 3;
 
 fn main() {
     println(f"NUMBER is {NUMBER}");
