@@ -296,3 +296,24 @@ let amounts = valid_transactions.map(|txn: Transaction| txn.amount);
 let sum = amounts.reduce(|acc: Field,x: Field| acc + x);
 ```
 """
+# TUPLES
+[[exercises]]
+name = "tuple1"
+path = "exercises/tuples/tuple1.nr"
+mode = "test"
+hint = """
+```
+let person = (name,age,zip);
+person
+```
+"""
+
+[[exercises]]
+name = "tuple2"
+path = "exercises/tuples/tuple2.nr"
+mode = "test"
+hint = """
+```
+No hint this time
+```
+"""
