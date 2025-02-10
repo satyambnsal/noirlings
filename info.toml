@@ -133,3 +133,27 @@ mode = "test"
 hint = """
 No hint this time
 """
+
+[[exercises]]
+name = "structs3"
+path = "exercises/data-types/structs3.nr"
+mode = "test"
+hint = """
+Define Person Struct like this
+```
+struct Person {
+    name: str<10>,
+    age: Field,
+    home_address: Address,
+}
+```
+First create a home_address like
+```
+let home_address = Address { street_number: street_num, zip_code: zip };
+```
+Finally create and resturn Person instance
+```
+Person { name, age, home_address }
+```
+
+"""
