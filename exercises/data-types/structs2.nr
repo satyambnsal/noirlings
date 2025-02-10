@@ -16,8 +16,8 @@ impl Rectangle {
     // Your implementation here
 
     fn perimeter(self) -> Field {
-      2 * (width + height)
-    } 
+      2 * (self.width + self.height)
+    }
 }
 
 fn main() {
