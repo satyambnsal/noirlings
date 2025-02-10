@@ -1,4 +1,4 @@
-// structs1.nr
+// reference1.nr
 // use the `hint` watch subcommand for a hint.
 
 // I AM NOT DONE

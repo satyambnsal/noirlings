@@ -184,6 +184,7 @@ Define `add_product` method inside implementation block
 """
 
 # REFERENCES
+
 [[exercises]]
 name = "reference1"
 path = "exercises/references/reference1.nr"
@@ -194,4 +195,21 @@ let temp = *a;
 *a = *b;
 *b = temp;
 ```
+"""
+
+[[exercises]]
+name = "reference2"
+path = "exercises/references/reference2.nr"
+mode = "test"
+hint = """
+```
+    fn increment(&mut self) {
+        self.value = self.value + self.step;
+    }
+    fn update_step(&mut self, new_step: Field) {
+        self.step = new_step;
+    }
+```
+As you may have noticed we are not using dereferce symbol(*) because compiler automatically dereferences the struct 
+reference when you access its fields. This is called "auto-dereferencing" or "auto-ref/deref".
 """
