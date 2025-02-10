@@ -106,3 +106,30 @@ mode = "test"
 hint = """
 No hint this time
 """
+
+[[exercises]]
+name = "array_advance"
+path = "exercises/arrays/array_advance.nr"
+mode = "test"
+hint = """
+No hint this time
+"""
+
+
+# Structs
+
+[[exercises]]
+name = "structs1"
+path = "exercises/data-types/structs1.nr"
+mode = "test"
+hint = """
+No hint this time
+"""
+
+[[exercises]]
+name = "structs2"
+path = "exercises/data-types/structs2.nr"
+mode = "test"
+hint = """
+No hint this time
+"""
