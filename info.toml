@@ -120,7 +120,7 @@ No hint this time
 
 [[exercises]]
 name = "structs1"
-path = "exercises/data-types/structs1.nr"
+path = "exercises/structs/structs1.nr"
 mode = "test"
 hint = """
 No hint this time
@@ -128,7 +128,7 @@ No hint this time
 
 [[exercises]]
 name = "structs2"
-path = "exercises/data-types/structs2.nr"
+path = "exercises/structs/structs2.nr"
 mode = "test"
 hint = """
 No hint this time
@@ -136,7 +136,7 @@ No hint this time
 
 [[exercises]]
 name = "structs3"
-path = "exercises/data-types/structs3.nr"
+path = "exercises/structs/structs3.nr"
 mode = "test"
 hint = """
 Define Person Struct like this
@@ -155,5 +155,30 @@ Finally create and resturn Person instance
 ```
 Person { name, age, home_address }
 ```
+"""
 
+[[exercises]]
+name = "shopping_cart"
+path = "exercises/structs/shopping_cart.nr"
+mode = "test"
+hint = """
+Define `new()` method inside implementation block
+```
+    fn new() -> Cart {
+        let product = Product { id: 0, price: 0, quantity: 0 };
+        Cart { items: [product; 3], total_items: 0 }
+    }
+```
+Define `add_product` method inside implementation block
+```
+    fn add_product(&mut self, product: Product) -> bool {
+        if self.total_items as u64 >= 3 {
+            false
+        } else {
+            self.items[self.total_items as u64] = product;
+            self.total_items = self.total_items + 1;
+            true
+        }
+    }
+```
 """

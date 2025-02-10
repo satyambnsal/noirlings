@@ -1,6 +1,8 @@
 // structs3.nr
 // use the `hint` watch subcommand for a hint.
 
+// I AM NOT DONE
+
 struct Address {
     street_number: Field,
     zip_code: Field,
