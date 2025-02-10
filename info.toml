@@ -213,3 +213,86 @@ hint = """
 As you may have noticed we are not using dereferce symbol(*) because compiler automatically dereferences the struct 
 reference when you access its fields. This is called "auto-dereferencing" or "auto-ref/deref".
 """
+
+#SLICES
+
+[[exercises]]
+name = "slice1"
+path = "exercises/slices/slice1.nr"
+mode = "test"
+hint = """
+```
+let mut slice = &[1, 2, 3];
+slice = slice.push_back(4);
+slice = slice.push_front(0);
+```
+
+"""
+
+[[exercises]]
+name = "slice2"
+path = "exercises/slices/slice2.nr"
+mode = "test"
+hint = """
+1. Use `insert` method to insert element at particular index. `insert` method returns new slice.
+```
+slice = slice.insert(2, 42);
+```
+2. Remove element from front using `pop_front` method. This method returns a tuple of removed element and new slice.
+    let (_, slice) = slice.pop_front();
+3. return slice length typecasted as Field.
+```
+slice.len() as Field
+```
+"""
+
+[[exercises]]
+name = "slice3"
+path = "exercises/slices/slice3.nr"
+mode = "test"
+hint = """
+1. First create a new slice of doubled elements using `map` method.
+```
+    let slice1 = input.map(|a| a * 2);
+```
+2. Filter elements greater than 10 using `filter method`
+```
+    let slice2 = slice1.filter(|a| a as u64 <= 10);
+```
+3. Return the slice
+```    
+slice2
+```
+"""
+
+[[exercises]]
+name = "slice4"
+path = "exercises/slices/slice4.nr"
+mode = "test"
+hint = """
+1. We are going to use `Stats` struct to store sum and count. define initial value for accumulator
+```
+let acc = Stats { sum: 0, count: 0 };
+```
+2. Use `fold` method to fold values. Here we are passing closure function that will process each element of slice. 
+3. Remember to define explicit type in closure for `acc` and `x` as type must be known by this point.
+```
+let stats = numbers.fold(acc, |acc: Stats, x: Field| Stats { sum: acc.sum + x, count: acc.count + 1 });
+```
+4. Return the average
+```
+stats.sum / stats.count
+```
+"""
+
+[[exercises]]
+name = "slice5"
+path = "exercises/slices/slice5.nr"
+mode = "test"
+hint = """
+```
+let valid_transactions = transactions.filter(|txn: Transaction| txn.valid == true);
+let amounts = valid_transactions.map(|txn: Transaction| txn.amount);
+let sum = amounts.reduce(|acc: Field,x: Field| acc + x);
+```
+"""
