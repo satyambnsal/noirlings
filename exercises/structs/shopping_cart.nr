@@ -1,4 +1,4 @@
-// structs3.nr
+// shopping_cart.nr
 // use the `hint` watch subcommand for a hint.
 
 // I AM NOT DONE

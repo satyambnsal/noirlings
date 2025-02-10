@@ -182,3 +182,16 @@ Define `add_product` method inside implementation block
     }
 ```
 """
+
+# REFERENCES
+[[exercises]]
+name = "reference1"
+path = "exercises/references/reference1.nr"
+mode = "test"
+hint = """
+```
+let temp = *a;
+*a = *b;
+*b = temp;
+```
+"""
