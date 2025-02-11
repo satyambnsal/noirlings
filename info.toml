@@ -317,3 +317,40 @@ hint = """
 No hint this time
 ```
 """
+
+# Strings
+[[exercises]]
+name = "string1"
+path = "exercises/strings/string1.nr"
+mode = "test"
+hint = """
+```
+if password == "SuperSecret!" {
+      true
+} else {
+  false
+}
+```
+"""
+
+[[exercises]]
+name = "string2"
+path = "exercises/strings/string2.nr"
+mode = "test"
+hint = """
+1. First convert string into byte array by calling `as_bytes()`
+```
+    let char_bytes = text.as_bytes();
+```
+2. Run a loop on byte array to sum the values
+```
+    let mut sum: Field = 0;
+    for i in 0..5 {
+        sum = sum + char_bytes[i] as Field;
+    }
+```
+3. Return the sum
+```
+    sum as Field
+```
+"""
