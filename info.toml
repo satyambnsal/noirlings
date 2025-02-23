@@ -354,3 +354,118 @@ hint = """
     sum as Field
 ```
 """
+
+# INTEGERS
+
+[[exercises]]
+name = "integer1"
+path = "exercises/integers/integer1.nr"
+mode = "test"
+hint = """
+```
+let kill_assists = wrapping_add(wrapping_mul(kills,2), assists);
+if deaths > kill_assists {
+    0
+} else {
+    kill_assists - deaths
+}
+```
+"""
+
+[[exercises]]
+name = "integer2"
+path = "exercises/integers/integer12.nr"
+mode = "test"
+hint = """
+"""
+
+
+# TRAITS
+
+[[exercises]]
+name = "traits1"
+path = "exercises/traits/traits1.nr"
+mode = "test"
+hint = """
+```
+fn area(self) -> Field {
+      self.width * self.height
+}
+```
+"""
+
+[[exercises]]
+name = "traits2"
+path = "exercises/traits/traits2.nr"
+mode = "test"
+hint = """
+1. Implement Area trait for Circle
+```
+impl Area for Circle {
+    fn area(self) -> Field {
+      3 * self.radius * self.radius
+    }
+}
+```
+2. Implement Perimeter trait for Circle
+```
+impl Perimeter for Circle {
+    fn perimeter(self) -> Field {
+      2 * 3 * self.radius
+    }
+}
+```
+"""
+
+
+[[exercises]]
+name = "traits3"
+path = "exercises/traits/traits3.nr"
+mode = "test"
+hint = """
+1. Convert trait implementation
+```
+impl Convert<Fahrenheit> for Celsius {
+    fn convert(self) -> Fahrenheit {
+    let f_temp = self.temp * 9/5 + 32;
+    Fahrenheit {
+        temp: f_temp
+    }
+    }
+}
+```
+"""
+
+[[exercises]]
+name = "traits4"
+path = "exercises/traits/traits4.nr"
+mode = "test"
+hint = """
+1. Implement `Counter` trait like this for Number
+```
+impl Counter for Number {
+    fn increment(self) -> Self {
+      Number {
+        value: self.value + 1
+      }
+    }
+}
+```
+"""
+
+
+[[exercises]]
+name = "traits5"
+path = "exercises/traits/traits5.nr"
+mode = "test"
+hint = """
+```
+fn find_maximum<T>(values: [T; 5]) -> T where T: Maximum {
+    let mut maximum = values[0];
+    for i in 1..5 {
+      maximum = values[i].max(maximum);
+    }
+    maximum
+}
+```
+"""

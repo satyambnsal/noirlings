@@ -12,12 +12,6 @@ trait Maximum {
 // that implements Maximum and returns the maximum value
 fn find_maximum<T>(values: [T; 5]) -> T where T: Maximum {
     // Add your implementation here
-    let mut maximum = values[0];
-
-    for i in 1..5 {
-      maximum = values[i].max(maximum);
-    }
-    maximum + 1
 }
 
 // Here's an implementation of Maximum for Field to help test your function
