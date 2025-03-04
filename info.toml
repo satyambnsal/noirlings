@@ -374,7 +374,7 @@ if deaths > kill_assists {
 
 [[exercises]]
 name = "integer2"
-path = "exercises/integers/integer12.nr"
+path = "exercises/integers/integer2.nr"
 mode = "test"
 hint = """
 """
