@@ -23,11 +23,6 @@ struct Number {
 // You don't need to implement increment_twice as it has a default implementation
 impl Counter for Number {
     // Add your implementation here
-    fn increment(self) -> Self {
-      Number {
-        value: self.value + 1
-      }
-    }
 }
 
 #[test]

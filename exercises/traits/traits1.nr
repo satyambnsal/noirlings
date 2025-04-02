@@ -20,9 +20,6 @@ struct Rectangle {
 // The area should be calculated as width * height
 impl Shape for Rectangle {
     //TODO: Complete `area` method implementation
-    fn area(self) -> Field {
-      self.width * self.height
-    }
 }
 
 #[test]
