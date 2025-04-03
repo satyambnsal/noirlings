@@ -6,12 +6,12 @@
 
 
 trait Counter {
-  fn increment(self) -> Self;
-  
-  // This is a default implementation that calls increment twice
-  fn increment_twice(self) -> Self {
-      self.increment().increment()
-  }
+    fn increment(self) -> Self;
+    
+    // This is a default implementation that calls increment twice
+    fn increment_twice(self) -> Self {
+            self.increment().increment()
+    }
 }
 
 struct Number {
@@ -24,9 +24,6 @@ struct Number {
 impl Counter for Number {
     // Add your implementation here
     fn increment(self) -> Self {
-      Number {
-        value: self.value + 1
-      }
     }
 }
 

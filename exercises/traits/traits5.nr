@@ -20,7 +20,7 @@ impl Maximum for Field {
         if self.lt(other) {
             other
         } else {
-          self
+            self
         }
     }
 }
