@@ -42,19 +42,19 @@ Run
 ```sh
 curl https://sh.rustup.rs -sSf | sh -s
 ```
-3. Install Noir:
+2. Install Noir:
 
 ```sh
 curl -L https://raw.githubusercontent.com/noir-lang/noirup/refs/heads/main/install | bash
 noirup
 ```
 
-4. After Installing **Rust** and **Nargo**, you are ready to run your exercises. Lets first install the project binary with
+3. After Installing **Rust** and **Nargo**, you are ready to run your exercises. Lets first install the project binary with
 ```
 cargo install --path .
 ```
 
-5. Now you should have noirlings available as command. You can verify the installation with
+4. Now you should have noirlings available as command. You can verify the installation with
 ```
 noirlings --version
 ```
