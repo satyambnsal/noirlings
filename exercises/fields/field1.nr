@@ -15,7 +15,8 @@ fn main() {
   assert(p1 == 0, "incorrect p1 value");
 
   let p2: Field = p * p;
-  assert(p2 == 1, "incorrect p2 value");
+  // TODO: replace ? with correct p1 value
+  assert(p2 == ?, "incorrect p2 value");
 }
 
 
