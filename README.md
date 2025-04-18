@@ -128,6 +128,12 @@ cargo test
 
 If you need any help while doing the exercises, feel free to ask in the [_Q&A_ category of the discussions](https://github.com/satyambnsal/noirlings/discussions/) if your question wasn't asked yet 💡
 
+
+## Known Issues
+
+1. If you get permission denied error when running `noirlings watch` command. Check permissions of `~/.nargo/github.com` and `~/.nargo` 
+You can change permission of folder with `chmod 777 ~/.nargo` 
+
 ## Noir Resources
 
 - [Official Noir Documentation](https://noir-lang.org/docs)
