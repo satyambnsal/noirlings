@@ -499,6 +499,15 @@ name = "quiz1"
 path = "exercises/quizs/quiz1.nr"
 mode = "test"
 hint = """
+```
+fn equality(inputs: [u32;3]) -> bool {
+  if (inputs[0] == inputs[1]) & (inputs[0] == inputs[2]) {
+    true
+  } else {
+    false
+  }
+}
+```
 """
 
 
@@ -507,4 +516,49 @@ name = "pedersen_hash"
 path = "exercises/advance/pedersen_hash.nr"
 mode = "test"
 hint = """
+"""
+
+
+[[exercises]]
+name = "embedded_curve1"
+path = "exercises/embedded_curves/embedded_curve1.nr"
+mode = "test"
+hint = """
+```
+struct EmbeddedCurvePoint {
+  x: Field,
+  y: Field,
+  is_infinite: bool
+}
+```
+"""
+
+[[exercises]]
+name = "embedded_curve2"
+path = "exercises/embedded_curves/embedded_curve2.nr"
+mode = "test"
+hint = """
+1. Generator function implementation
+```
+pub fn generator() -> EmbeddedCurvePoint {
+      EmbeddedCurvePoint {
+        x: 1,
+        y: 17631683881184975370165255887551781615748388533673675138860,
+        is_infinite: false
+      }
+}
+```
+2. Point At Infinity
+```
+    pub fn point_at_infinity() -> EmbeddedCurvePoint {
+        EmbeddedCurvePoint { x: 0, y: 0, is_infinite: true }
+    }
+```
+
+3. Negation Implementation
+```
+pub fn neg(self) -> EmbeddedCurvePoint {
+        EmbeddedCurvePoint { x: self.x, y: -self.y, is_infinite: self.is_infinite }
+    }
+```
 """
