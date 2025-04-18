@@ -492,3 +492,19 @@ with this lets expand (p-1) * (p-1) = p^2 - 2p + 1 (mod p)
 since p mod p is zero we can discard p^2 - 2p
 hence (p-1) * (p-1) = 1
 """
+
+
+[[exercises]]
+name = "quiz1"
+path = "exercises/quizs/quiz1.nr"
+mode = "test"
+hint = """
+"""
+
+
+[[exercises]]
+name = "pedersen_hash"
+path = "exercises/advance/pedersen_hash.nr"
+mode = "test"
+hint = """
+"""

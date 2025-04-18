@@ -144,3 +144,7 @@ You can change permission of folder with `chmod 777 ~/.nargo`
 ## Credits
 
 - Inspired by [Rustlings](https://github.com/rust-lang/rustlings) and [Starklings](https://github.com/shramee/starklings-cairo1)
+
+
+## TODO
+- [] Add Support for `nargo info` for each exercise to print **ACIR Opcodes** count and **Brillig Opcode** count.
