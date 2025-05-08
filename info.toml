@@ -255,7 +255,7 @@ hint = """
 ```
     let slice1 = input.map(|a| a * 2);
 ```
-2. Filter elements greater than 10 using `filter method`
+2. Filter elements less than 10 using `filter method`
 ```
     let slice2 = slice1.filter(|a| a as u64 <= 10);
 ```
