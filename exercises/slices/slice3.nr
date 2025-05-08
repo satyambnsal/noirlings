@@ -6,7 +6,7 @@
 fn transform_slice(input: [Field]) -> [Field] {
     // TODO:
     // 1. Double each element in the slice using map
-    // 2. Filter out all elements that are greater than 10
+    // 2. Filter out all elements that are less than 10
     // 3. Return the resulting slice
 
     // Your code here
