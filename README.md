@@ -83,7 +83,7 @@ Noirlings is designed to help you learn Noir through hands-on exercises:
 
 For syntax highlighting and language support:
 
-1. Install the [Noir VSCode Extension](https://marketplace.visualstudio.com/items?itemName=noir-lang.noir-programming-language)
+1. Install the [Noir VSCode Extension](https://marketplace.visualstudio.com/items?itemName=noir-lang.vscode-noir)
 2. Open the project folder in VSCode
 
 ## Contributing
